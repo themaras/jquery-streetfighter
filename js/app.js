@@ -27,6 +27,7 @@ $(document).ready(function() {
   });
   $(document).keydown(function(e) {
   if (e.keyCode == 88){
+    playJammin();
     $('.ryu-ready, .ryu-still, .ryu-throwing').hide();
     $('.ryu-cool').show();
     }
@@ -43,4 +44,10 @@ function playHadouken () {
   $('#hadouken-sound')[0].volume = 0.5;
   $('#hadouken-sound')[0].load();
   $('#hadouken-sound')[0].play();
+}
+
+function playJammin () {
+  $('#cool')[0].volume = 0.5;
+  $('#cool')[0].load();
+  $('#cool')[0].play();
 }
