@@ -50,4 +50,4 @@ function playJammin () {
   $('#cool')[0].volume = 0.5;
   $('#cool')[0].load();
   $('#cool')[0].play();
-}
+ }
